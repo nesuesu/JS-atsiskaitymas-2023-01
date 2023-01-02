@@ -16,7 +16,7 @@ class Movie{
     }
 
     wasExpensive(){
-        return this.budget>100000000?true:false;
+        return this.budget>100000000;
     }
 }
 
