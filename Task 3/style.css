@@ -58,8 +58,24 @@
   padding: 30px;
   border-radius: 5px;
   background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
-#output img {
-  /* width: 200px; */
+.card {
+  background-color: beige;
+  width: 300px;
+  border-radius: 5px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.card h2::before{
+  content: "login:";
+  font-weight: 100;
+  font-style: italic;
 }

@@ -25,15 +25,19 @@ show.addEventListener("click", e =>{
         output.innerHTML = '';
         data.forEach(element => {
 
+            let kortele = document.createElement("div");
+            kortele.classList.add("card");
+            
             let login = document.createElement("h2");
-            let tekstas = document.createTextNode(element.login);
+            let tekstas = document.createTextNode(" " + element.login);
             login.append(tekstas);
 
             let avatar = document.createElement("img");
             avatar.setAttribute("src", element.avatar_url);
             avatar.setAttribute("alt", "avatar");
 
-            output.append(login, avatar);
+            kortele.append(login, avatar);
+            output.append(kortele);
         });
 
 
