@@ -10,3 +10,29 @@ bent minimalų stilių;
 -------------------------------------------------------------------------- */
 
 const ENDPOINT = 'cars.json';
+
+fetch(ENDPOINT)
+.then(res => res.json())
+.then(data => {
+    console.log(data);
+
+    let output = document.querySelector("#output")
+    data.forEach(element => {
+
+        let kortele = document.createElement("div");
+        kortele.classList.add("card");
+
+        let brand = document.createElement("h1");
+        let tekstas = document.createTextNode(element.brand);
+        brand.append(tekstas);
+
+        let models = document.createElement("p");
+        element.models.forEach(el => {
+            let model = document.createTextNode(" " + el + ",");
+            models.append(model); 
+        })
+
+        kortele.append(brand,models);
+        output.append(kortele);
+    })
+})

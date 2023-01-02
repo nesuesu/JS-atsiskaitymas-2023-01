@@ -52,6 +52,21 @@ form {
   color: #fff;
 }
 
+
+#output {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 15px;
+  box-shadow: 10px 10px 8px #5f4602;
+  padding: 25px;
+}
+
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {

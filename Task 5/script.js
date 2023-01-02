@@ -19,3 +19,9 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30, hasDog: false },
   { id: '9', name: 'Daniel Cane', age: 51, hasDog: true },
 ];
+
+let filterDogOwners = (masyvas) => masyvas.filter(element => element.hasDog);
+let filterAdults = (masyvas) => masyvas.filter(element => element.age>=18)
+
+// console.log("Vartotojai, kurie turi augintinius:", filterDogOwners(users));
+// console.log("Vartotojai, kurie yra pilnamečiai:", filterAdults(users));

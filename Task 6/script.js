@@ -19,3 +19,14 @@ const users = [
   { id: '8', name: 'Simon Peterson', age: 30 },
   { id: '9', name: 'Daniel Cane', age: 51 },
 ];
+
+let getUserAverageAge = (masyvas) => {
+  let ages = [];
+    masyvas.forEach(element => {
+      ages.push(element.age);
+    });
+  let vidurkis = (ages.reduce((acc,val) => acc + val)/ages.length).toFixed(2);
+  return vidurkis;
+}
+
+// console.log("Vartotojų amžiaus vidurkis:", getUserAverageAge(users));
