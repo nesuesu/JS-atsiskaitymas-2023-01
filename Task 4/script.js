@@ -27,9 +27,15 @@ fetch(ENDPOINT)
         brand.append(tekstas);
 
         let models = document.createElement("p");
-        element.models.forEach(el => {
-            let model = document.createTextNode(" " + el + ",");
-            models.append(model); 
+        element.models.forEach((el, ind, arr) => {
+            if (ind != (arr.length-1) ){
+                let model = document.createTextNode(" " + el + ",");
+                models.append(model); 
+            } else {
+                let model = document.createTextNode(" " + el + "");
+                models.append(model); 
+            }
+            
         })
 
         kortele.append(brand,models);
