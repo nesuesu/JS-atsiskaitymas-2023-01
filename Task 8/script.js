@@ -7,7 +7,7 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 ------------------------------------------------------------------------------------ */
 
 class Calculator {
-    constructor(){}
+    // constructor(){};
     sum(a,b){
         return a+b;
     }
@@ -22,8 +22,8 @@ class Calculator {
     }
 }
 
-// let calc = new Calculator;
-// console.log("5+3=", calc.sum(5,3));
-// console.log("6-1=", calc.subtraction(6,1));
-// console.log("3*5=", calc.multiplication(3,5));
-// console.log("12/3=", calc.division(12,3));
+let calc = new Calculator;
+console.log("5+3=", calc.sum(5,3));
+console.log("6-1=", calc.subtraction(6,1));
+console.log("3*5=", calc.multiplication(3,5));
+console.log("12/3=", calc.division(12,3));

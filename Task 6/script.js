@@ -29,4 +29,24 @@ let getUserAverageAge = (masyvas) => {
   return vidurkis;
 }
 
-// console.log("Vartotojų amžiaus vidurkis:", getUserAverageAge(users));
+
+console.log("Vartotojų amžiaus vidurkis:", getUserAverageAge(users));
+
+
+
+
+let getUserAverageAge1 = (masyvas) => {
+
+  return (masyvas.map(element => element.age).reduce((acc,val) => acc + val)/masyvas.length).toFixed(2);
+}
+
+console.log("Vartotojų amžiaus vidurkis:", getUserAverageAge1(users));
+
+
+
+
+let getUsersNames = (masyvas) => {
+  return masyvas.map(element => element.name);
+}
+
+console.log("Vartotojų vardai:", getUsersNames(users));

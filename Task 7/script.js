@@ -16,4 +16,4 @@ let showObjectKeys = (masyvas) => {
   return Object.keys(masyvas);
 }
 
-// console.log(showObjectKeys(audi));
+console.log(showObjectKeys(audi));

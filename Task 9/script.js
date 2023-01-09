@@ -20,8 +20,8 @@ class Movie{
     }
 }
 
-// let movie1 = new Movie("pavadinimas", "režisierius", 101000000);
-// console.log(movie1.wasExpensive()); 
+let movie1 = new Movie("pavadinimas", "režisierius", 101000000);
+console.log(movie1.wasExpensive()); 
 
-// let movie2 = new Movie("pavadinimas", "režisierius", 91000000);
-// console.log(movie2.wasExpensive()); 
+let movie2 = new Movie("pavadinimas", "režisierius", 91000000);
+console.log(movie2.wasExpensive()); 
